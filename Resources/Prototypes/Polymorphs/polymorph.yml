@@ -176,6 +176,18 @@
     revertOnCrit: true
     duration: 20
 
+- type: polymorph
+  id: PolymorphCatShadow
+  configuration:
+    entity: MobCatShadow
+    forced: true
+    transferName: true
+    transferHumanoidAppearance: true
+    inventory: None
+    revertOnDeath: true
+    revertOnCrit: true
+    duration: 20
+
 # Polymorphs for Wizards polymorph self spell
 - type: polymorph
   id: WizardSpider

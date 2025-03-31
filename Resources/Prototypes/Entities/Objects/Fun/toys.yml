@@ -2010,9 +2010,43 @@
   name: shadowkin plushie
   description: A plushie of a Shadowkin. It's very soft.
   components:
-    - type: Sprite
-      sprite: Objects/Fun/toys.rsi
-      state: shadowkin
+  - type: Sprite
+    sprite: Objects/Fun/toys.rsi
+    state: shadowkin
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Voice/Shadowkin/mar.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Voice/Shadowkin/mar.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Voice/Shadowkin/mar.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Voice/Shadowkin/mar.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/Voice/Shadowkin/mar.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/Voice/Shadowkin/mar.ogg
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceThatMakesYouMar
+        Quantity: 30
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
+        - ReagentId: JuiceThatMakesYouMar
+          Quantity: 10
 
 - type: entity
   parent: BasePlushie

@@ -349,3 +349,33 @@
         conditions:
         - !type:ReagentThreshold
           min: 50
+
+- type: reagent
+  id: JuiceThatMakesYouMar
+  name: reagent-name-mar
+  group: Toxins
+  desc: reagent-desc-mar
+  physicalDesc: reagent-physical-desc-ethereal
+  flavor: weh
+  color: "#d000ff"
+  metabolisms:
+    Poison:
+      metabolismRate: 0.25
+      effects:
+      - !type:Emote
+        emote: Mars
+        showInChat: true
+        force: true
+        bypassWhitelist: true
+        probability: 0.5
+      - !type:Polymorph
+        prototype: PolymorphCatShadow
+        conditions:
+        - !type:ReagentThreshold
+          min: 50
+      - !type:AdjustReagent
+        reagent: JuiceThatMakesYouMar
+        amount: -20
+        conditions:
+        - !type:ReagentThreshold
+          min: 50

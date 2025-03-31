@@ -27,3 +27,6 @@ reagent-desc-laughter = Some say that this is the best medicine, but recent stud
 
 reagent-name-weh = juice that makes you Weh
 reagent-desc-weh = Pure essence of lizard plush. Makes you Weh!
+
+reagent-name-mar = the juice in the plushies from the world at the end of time
+reagent-desc-mar = It is unknown how this got into the plushies
