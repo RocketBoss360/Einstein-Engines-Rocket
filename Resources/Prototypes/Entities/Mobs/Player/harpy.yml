@@ -22,3 +22,14 @@
     factions:
     - NanoTrasen
     - Birb
+
+
+# Random harpy
+- type: entity
+  parent: MobHarpy
+  categories: [ HideSpawnMenu ]
+  id: MobHarpyRandom
+  name: Harpy
+  components:
+    - type: IsDeadIC
+    - type: RandomHumanoidAppearance

@@ -4,3 +4,13 @@
   parent: MobShadowkinBase
   id: MobShadowkin
   description: "Their barrel chest doesn't seem to rise and fall as quickly as a human's, how unnerving."
+
+# Random shadowkin
+- type: entity
+  parent: MobShadowkinBase
+  categories: [ HideSpawnMenu ]
+  id: MobShadowkinRandom
+  name: Shadowkin
+  components:
+    - type: IsDeadIC
+    - type: RandomHumanoidAppearance

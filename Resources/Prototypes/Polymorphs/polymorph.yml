@@ -179,14 +179,13 @@
 - type: polymorph
   id: PolymorphCatShadow
   configuration:
-    entity: MobCatShadow
+    entity: MobHarpyRandom
     forced: true
+    inventory: Transfer
     transferName: true
-    transferHumanoidAppearance: true
-    inventory: None
-    revertOnDeath: true
-    revertOnCrit: true
-    duration: 20
+    transferDamage: true
+    revertOnCrit: false
+    revertOnDeath: false
 
 # Polymorphs for Wizards polymorph self spell
 - type: polymorph
